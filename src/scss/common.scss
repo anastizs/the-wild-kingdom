@@ -1,0 +1,36 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+// Шапка блоку
+.block-header {
+	display: grid;
+	gap: toRem(20);
+	justify-items: start;
+
+	// .block-header__label
+
+	&__label {
+		line-height: 156.25%; /* 25px/16 */
+		text-transform: capitalize;
+	}
+
+	// .block-header__title
+
+	&__title {
+		font-family: "Italiana";
+		color: $goldColor;
+		font-size: toRem(48);
+		text-transform: capitalize;
+	}
+
+	// .block-header__text
+
+	&__text {
+		line-height: 156.25%; /* 25px/16 */
+		display: grid;
+	gap: toRem(20);
+		blockquote{
+			font-style: italic;
+		}
+	}
+
+}
